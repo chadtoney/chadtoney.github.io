@@ -6,6 +6,7 @@ A lightweight, multi-page personal website with a focused landing page and a sep
 
 - Information first: clear hierarchy, quiet dividers, readable type, and a restrained accent color.
 - Outcomes have direct labels and context, without decorative charts or unrelated comparisons.
+- A compact introduction and page directory orient visitors; outcome rows pair each result with its organization and explanation.
 - Responsive layouts, keyboard focus indicators, skip links, and current-page navigation.
 - Print styles for the résumé.
 - Plain HTML and shared CSS: no JavaScript, build step, fonts, or icon CDN required.
@@ -64,7 +65,7 @@ chadtoney.github.io/
 
 1. Copy `page-template.html` to a descriptive filename in the repository root, such as `projects.html`.
 2. Replace its title, description, topic, heading, introduction, and content. Remove the `noindex` meta tag when the new page is ready to be indexed; leave it on the original template.
-3. Add an entry to the landing page’s `page-list` under **Explore**, using the existing résumé entry as the pattern. Link to the new filename and supply a short description.
+3. Add an entry to the landing page’s `page-list` under **Explore this site**, using the existing résumé entry as the pattern. Link to the new filename and supply a short description. This directory is the main extension point: new pages can be discovered here without adding every page to the header.
 4. Keep the shared Home/Résumé navigation for secondary pages. If promoting a page into the main navigation, update the header in every HTML file, including the template; set `aria-current="page"` only on the link matching each page.
 5. Reuse `page-content`, `section`, and the shared layout classes rather than copying CSS. Root-level relative links work both on GitHub Pages and when opening files directly; nested pages would need adjusted paths.
 
