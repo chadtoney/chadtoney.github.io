@@ -6,6 +6,7 @@
     <meta name="robots" content="noindex">
     <meta name="description" content="Replace with a short description of this page.">
     <title>Page title | Chad Toney</title>
+    <script src="theme.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,11 +16,13 @@
             <a class="site-name" href="index.html">Chad Toney</a>
             <nav aria-label="Main navigation">
                 <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
                 <a href="resume.html">Résumé</a>
+                <a href="#contact">Contact</a>
             </nav>
         </header>
 
-        <main id="main">
+        <main id="main" tabindex="-1">
             <header class="header">
                 <p class="eyebrow">Topic</p>
                 <h1>Page title</h1>
@@ -31,9 +34,13 @@
             </div>
         </main>
 
-        <footer class="footer">
-            <p>&copy; 2026 Chad Toney. All rights reserved.</p>
-            <a href="index.html">Back to home</a>
+        <footer class="footer-bar" id="contact">
+            <p>Let’s build solutions that matter.</p>
+            <nav class="footer-links" aria-label="Contact links">
+                <a href="mailto:chad.toney@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/chadtoney/">LinkedIn</a>
+                <a href="https://github.com/chadtoney">GitHub</a>
+            </nav>
         </footer>
     </div>
 </body>
